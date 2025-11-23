@@ -114,11 +114,13 @@ npm run lint
 
 ## Lisans
 
-Bu proje özel bir projedir.
+Bu proje [MIT License](LICENSE) altında lisanslanmıştır.
+
+Copyright (c) 2025 Yunus Emre Soydan
 
 ## İletişim
 
-**Yunus Soydan**
+**Yunus Emre Soydan**
 - GitHub: [@Yunussoydan33](https://github.com/Yunussoydan33)
 - Email: yunussoydan@gmail.com
 

@@ -2,6 +2,8 @@
   "name": "case",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "author": "Yunus Emre Soydan <yunussoydan@gmail.com> (https://github.com/Yunussoydan33)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
