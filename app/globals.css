@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+}
+
+body {
+  background: #ffffff;
+  color: #171717;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* DevExpress lisans uyarı mesajını gizle */
+.dx-notification,
+.dx-notification-wrapper,
+[class*="dx-notification"],
+[class*="dx-toast"],
+[class*="dx-message"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* DevExpress Popup'ları gizleme - sadece banner'ları hedefle */
+
+/* DevExpress değerlendirme banner'ını gizle */
+body > div:has-text("For evaluation purposes"),
+body > div:has-text("Redistribution prohibited"),
+div[title*="evaluation"],
+div[title*="license"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Bu kural kaldırıldı - Popup'ları gizliyordu */
+/* Banner'ları gizlemek için HideDevExpressBanner component'i kullanılıyor */
+
+/* Navigation bar button styles */
+nav .dx-button.dx-button-mode-text {
+  color: #ffffff !important;
+}
+
+nav .dx-button.dx-button-mode-text.dx-state-hover {
+  color: #f0f0f0 !important;
+}
+
+nav .dx-button.dx-button-mode-text.dx-state-active {
+  color: #fde047 !important;
+}
+
+/* Navigation bar button icons */
+nav .dx-button.dx-button-mode-text .dx-icon {
+  color: #ffffff !important;
+}
+
+nav .dx-button.dx-button-mode-text.dx-state-hover .dx-icon {
+  color: #f0f0f0 !important;
+}
